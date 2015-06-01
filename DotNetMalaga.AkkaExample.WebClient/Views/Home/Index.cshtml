@@ -1,0 +1,55 @@
+﻿<div ng-app="sentimentAnalysis" ng-controller="emotionAnalysisController">
+    <div class="row">
+        <div class="col-md-3">
+            <h2>Elige hashtag(s)</h2>
+            #1<input type="text" ng-model="val1" />
+            <button ng-click="addHashtag(val1)">Analizar</button>
+            #2<input type="text" ng-model="val2" />
+            <button ng-click="addHashtag2(val2)">Analizar</button>
+        </div>
+        <div class="col-md-9">
+            <nvd3-line-with-focus-chart data="exampleData"
+                                        showxaxis="true"
+                                        showyaxis="true"
+                                        tooltips="true"
+                                        objectequality="true"
+                                        height="450"
+                                        x="xFunction()"
+                                        y="yFunction()"
+                                        forcey="[-1,1]"
+                                        xaxislabel="{{ xAxisLabelValue }} tweets"
+                                        nodata="Esperando datos de redes sociales..."
+                                        tooltipcontent="toolTipContentFunction()"
+                                        interactive="true">
+            </nvd3-line-with-focus-chart>
+        </div>
+    </div>
+
+    
+    <ul id="tabs" class="nav nav-tabs" data-tabs="tabs">
+        <li class="active"><a href="#hashtag1content" data-toggle="tab">{{ hashtagNice() }}</a></li>
+        <li><a href="#hashtag2content" data-toggle="tab">{{ hashtag2Nice() }}</a></li>
+    </ul>
+    <div id="my-tab-content" class="tab-content">
+        <div style="overflow: auto;" class="tab-pane active" id="hashtag1content">
+            <div ng-repeat="html in timeline1">
+                <div ng-bind-html="html.EmbededHtml"></div>
+            </div>
+        </div>
+        <div style="overflow: auto;" class="tab-pane" id="hashtag2content">
+            <div style="overflow: auto;"  ng-repeat="html in timeline2">
+                <div ng-bind-html="html.EmbededHtml"></div>
+            </div>
+        </div>
+    </div>
+    
+
+</div>
+
+@Scripts.Render("~/bundles/jquery")
+@Scripts.Render("~/bundles/bootstrap")
+@Scripts.Render("~/bundles/angulard3")
+<script src="~/Scripts/jquery.signalR-2.2.0.min.js"></script>
+<script src="~/signalr/hubs"></script>
+<script src="~/app/app.js"></script>
+<script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>

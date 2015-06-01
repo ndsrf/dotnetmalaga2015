@@ -1,0 +1,104 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>Home Page</title>
+    <link href="/Content/bootstrap.css" rel="stylesheet"/>
+<link href="/Content/nv.d3.css" rel="stylesheet"/>
+<link href="/Content/site.css" rel="stylesheet"/>
+
+    <script src="/Scripts/modernizr-2.6.2.js"></script>
+
+    <meta name="description" content="Social media sentiment analyzer" />
+</head>
+<body>
+    <div class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="/">dotNetMalaga 2015 - Analiza empat&#237;a de tweets (Topshelf, Nancy, Angular, Akka.Net, SignalR, NVD3/D3, TweetInvi)</a>
+            </div>
+        </div>
+    </div>
+    <div class="container body-content">
+        
+<div ng-app="sentimentAnalysis" ng-controller="emotionAnalysisController">
+    <div class="row">
+        <div class="col-md-3">
+            <h2>Elige hashtag</h2>
+            <input type="text" ng-model="val1" />
+            <button ng-click="addHashtag(val1)">Analizar</button>
+            <input type="text" ng-model="val2" />
+            <button ng-click="addHashtag2(val2)">Analizar</button>
+        </div>
+        <div class="col-md-9">
+            <nvd3-line-with-focus-chart data="exampleData"
+                                        showxaxis="true"
+                                        showyaxis="true"
+                                        tooltips="true"
+                                        objectequality="true"
+                                        height="450"
+                                        x="xFunction()"
+                                        y="yFunction()"
+                                        forcey="[-1,1]"
+                                        xaxislabel="{{ xAxisLabelValue }} tweets"
+                                        nodata="Esperando datos de redes sociales..."
+                                        tooltipcontent="toolTipContentFunction()"
+                                        interactive="true">
+            </nvd3-line-with-focus-chart>
+        </div>
+    </div>
+
+    
+    <ul id="tabs" class="nav nav-tabs" data-tabs="tabs">
+        <li class="active"><a href="#hashtag1content" data-toggle="tab">{{ hashtagNice() }}</a></li>
+        <li><a href="#hashtag2content" data-toggle="tab">{{ hashtag2Nice() }}</a></li>
+    </ul>
+    <div id="my-tab-content" class="tab-content">
+        <div style="overflow: auto;" class="tab-pane active" id="hashtag1content">
+            <div ng-repeat="html in timeline1">
+                <div ng-bind-html="html.EmbededHtml"></div>
+            </div>
+        </div>
+        <div style="overflow: auto;" class="tab-pane" id="hashtag2content">
+            <div style="overflow: auto;"  ng-repeat="html in timeline2">
+                <div ng-bind-html="html.EmbededHtml"></div>
+            </div>
+        </div>
+    </div>
+    
+
+</div>
+
+<script src="/Scripts/jquery-1.10.2.js"></script>
+
+<script src="/Scripts/bootstrap.js"></script>
+<script src="/Scripts/respond.js"></script>
+
+<script src="/Scripts/angular.min.js"></script>
+<script src="/Scripts/angular-sanitize.min.js"></script>
+<script src="/Scripts/d3.js"></script>
+<script src="/Scripts/nv.d3.js"></script>
+<script src="/Scripts/angularjs-nvd3-directives.js"></script>
+<script src="/Scripts/angular-signalr-hub.js"></script>
+
+<script src="/Scripts/jquery.signalR-2.2.0.min.js"></script>
+<script src="/signalr/hubs"></script>
+<script src="/app/app.js"></script>
+<script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+        <hr />
+        <footer>
+            <p>&copy; 2015 - dotNetMálaga 2015</p>
+        </footer>
+    </div>
+
+    <script src="/Scripts/bootstrap.js"></script>
+<script src="/Scripts/respond.js"></script>
+
+</body>
+</html>

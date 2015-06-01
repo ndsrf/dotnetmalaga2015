@@ -1,0 +1,9 @@
+E:\docs\programacion\GitNadasurf\DotNetMalaga.AkkaExample\DotNetMalaga.AkkaExample\DotNetMalaga.AkkaExample.Common\bin\Debug\DotNetMalaga.AkkaExample.Common.dll
+E:\docs\programacion\GitNadasurf\DotNetMalaga.AkkaExample\DotNetMalaga.AkkaExample\DotNetMalaga.AkkaExample.Common\bin\Debug\DotNetMalaga.AkkaExample.Common.pdb
+E:\docs\programacion\GitNadasurf\DotNetMalaga.AkkaExample\DotNetMalaga.AkkaExample\DotNetMalaga.AkkaExample.Common\bin\Debug\Akka.dll
+E:\docs\programacion\GitNadasurf\DotNetMalaga.AkkaExample\DotNetMalaga.AkkaExample\DotNetMalaga.AkkaExample.Common\bin\Debug\Newtonsoft.Json.dll
+E:\docs\programacion\GitNadasurf\DotNetMalaga.AkkaExample\DotNetMalaga.AkkaExample\DotNetMalaga.AkkaExample.Common\bin\Debug\Akka.xml
+E:\docs\programacion\GitNadasurf\DotNetMalaga.AkkaExample\DotNetMalaga.AkkaExample\DotNetMalaga.AkkaExample.Common\bin\Debug\Newtonsoft.Json.xml
+E:\docs\programacion\GitNadasurf\DotNetMalaga.AkkaExample\DotNetMalaga.AkkaExample\DotNetMalaga.AkkaExample.Common\obj\Debug\DotNetMalaga.AkkaExample.Common.csprojResolveAssemblyReference.cache
+E:\docs\programacion\GitNadasurf\DotNetMalaga.AkkaExample\DotNetMalaga.AkkaExample\DotNetMalaga.AkkaExample.Common\obj\Debug\DotNetMalaga.AkkaExample.Common.dll
+E:\docs\programacion\GitNadasurf\DotNetMalaga.AkkaExample\DotNetMalaga.AkkaExample\DotNetMalaga.AkkaExample.Common\obj\Debug\DotNetMalaga.AkkaExample.Common.pdb

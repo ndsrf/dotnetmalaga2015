@@ -1,0 +1,34 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.31101.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DotNetMalaga.AkkaExample.Service", "DotNetMalaga.AkkaExample.Service\DotNetMalaga.AkkaExample.Service.csproj", "{B4428C1E-B945-45C3-8A66-F35309CFF5DA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DotNetMalaga.AkkaExample.Common", "DotNetMalaga.AkkaExample.Common\DotNetMalaga.AkkaExample.Common.csproj", "{1C02D8EB-8826-4D83-99EF-875990B0B35F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DotNetMalaga.AkkaExample.WebClient", "DotNetMalaga.AkkaExample.WebClient\DotNetMalaga.AkkaExample.WebClient.csproj", "{82DCD045-F13E-4EDC-B79A-085AB91165A8}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B4428C1E-B945-45C3-8A66-F35309CFF5DA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B4428C1E-B945-45C3-8A66-F35309CFF5DA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B4428C1E-B945-45C3-8A66-F35309CFF5DA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B4428C1E-B945-45C3-8A66-F35309CFF5DA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1C02D8EB-8826-4D83-99EF-875990B0B35F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1C02D8EB-8826-4D83-99EF-875990B0B35F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1C02D8EB-8826-4D83-99EF-875990B0B35F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1C02D8EB-8826-4D83-99EF-875990B0B35F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{82DCD045-F13E-4EDC-B79A-085AB91165A8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{82DCD045-F13E-4EDC-B79A-085AB91165A8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{82DCD045-F13E-4EDC-B79A-085AB91165A8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{82DCD045-F13E-4EDC-B79A-085AB91165A8}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
