@@ -9,9 +9,9 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DotNetMalaga.AkkaExample.Co
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DotNetMalaga.AkkaExample.WebClient", "DotNetMalaga.AkkaExample.WebClient\DotNetMalaga.AkkaExample.WebClient.csproj", "{82DCD045-F13E-4EDC-B79A-085AB91165A8}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Powerpoint Presentation", "Powerpoint Presentation", "{BEB34E45-5FA6-4C5A-982E-A6FEA7C730E3}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{A10EDD49-AA78-481B-AD40-A3BE25E4D051}"
 	ProjectSection(SolutionItems) = preProject
-		..\..\..\..\sequel\dotnetmalaga\akka.net\dotnetmalaga-akkanet.pptx = ..\..\..\..\sequel\dotnetmalaga\akka.net\dotnetmalaga-akkanet.pptx
+		dotnetmalaga-akkanet.pptx = dotnetmalaga-akkanet.pptx
 	EndProjectSection
 EndProject
 Global
